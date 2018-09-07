@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var input1 = prompt("체중을입력해주세요(kg)");
+        var weight = Number(input1);
+        alert("체중은 "+weight+"입니다");
+        
+        var input2 = prompt("키(cm)를 입력하세요");
+        var height = Number(input2)/100;
+        alert("키는"+height+"입니다");
+
+        var bmi = weight/(height*height);
+        alert("bmi는"+bmi+"입니다");
+    </script>
+</body>
+</html>
