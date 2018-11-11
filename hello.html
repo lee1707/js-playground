@@ -1,9 +1,24 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>JS-Playground</h1>
-        <script>
-            console.log("Hello world");
-        </script>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <h2>test</h2>
+    <script>
+        var str = prompt("영어 문장을 입력해주세요");
+        var ustr = str.toUpperCase();
+        var lstr = str.toLowerCase();
+
+        if(str===ustr){
+            console.log("대문자 문장입니다");
+        }else if(str===lstr){
+            console.log("소문자 문장입니다.");
+        }else{
+            console.log("보통 문장입니다.")
+        }
+    </script>
+</body>
 </html>
