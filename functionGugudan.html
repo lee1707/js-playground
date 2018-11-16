@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+            <h1>구구단 전체출력</h1>
+            <script>
+                function gugudan(num){
+                    var results = [];
+                    for(var i = 1; i <= results.length; i++){
+                        for(var j = 2; j <= 9; j++){
+                            results[i] = i*j;
+                        }
+                    }
+                    return results;
+                }
+        
+                function printResult(results){
+                    for(var i=1; i<=results.length; i++){
+                            var str = "";
+                            str += i;
+                            str += " X ";
+                            str += j;
+                            str += " = "
+                            str += i*j;
+                            str += "<br>"
+                            document.write(str);
+                    }
+                }
+        
+                function main(){
+                    console.log("main 함수가 실행되었습니다");
+                    for(var n=2; n<=9; n++){
+                        result = gugudan(n);
+                        printResult(result);
+                    }
+                }
+                main();
+            </script>
+    
+</body>
+</html>
